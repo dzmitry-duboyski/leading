@@ -5,6 +5,10 @@ body {
   color: #222;
 }
 
+* {
+  border: 1px solid coral;
+}
+
 div {
   box-sizing: border-box;
 }
@@ -135,4 +139,45 @@ header h1 {
 
 .services__item:last-child{
   float: right;
+}
+
+#services{
+  padding-bottom: 120px;
+}
+
+#portfolio{
+  background: #f7f7f7;
+  padding-bottom: 120px;
+}
+
+.portfolio__item{
+  float: left;
+}
+
+.portfolio__item:nth-last-child(2){
+  margin-left: 22px;
+}
+
+.portfolio__item:last-child{
+  float: right;
+}
+
+#about{
+
+}
+
+.about__item{
+  margin-top: 80px;
+}
+
+.item__description{
+  float: left;
+  width: 350px;
+  line-height:20px;
+
+}
+
+.item__description h4,p{
+  text-align: right;
+  margin: 0;
 }
