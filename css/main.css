@@ -95,6 +95,13 @@ header h1 {
   margin-top: 50px;
 }
 
+.button:hover {
+  text-decoration: none;
+  color: #484543;
+  background: #7e4824;
+  transition: .3s;
+}
+
 .title {
   padding-top: 115px;
 }
@@ -133,6 +140,7 @@ header h1 {
   color: #777;
   font-size: 14px;
   line-height: 1.55em;
+  text-align: center;
 }
 
 .services__item:nth-last-child(2) {
@@ -146,6 +154,7 @@ header h1 {
 #services {
   padding-bottom: 120px;
 }
+
 
 #portfolio {
   background: #f7f7f7;
@@ -190,8 +199,7 @@ p {
   float: right;
 }
 
-.about__item:nth-child(even) 
-p {
+.about__item:nth-child(even) p {
   text-align: left;
 }
 
@@ -199,8 +207,8 @@ p {
   text-align: left;
 }
 
-footer{
-  background:#353537;
+footer {
+  background: #353537;
   color: #f7f7f7;
   text-align: center;
   padding: 15px;
