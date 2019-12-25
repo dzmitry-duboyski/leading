@@ -5,9 +5,11 @@ body {
   color: #222;
 }
 
+/*
 * {
   border: 1px solid coral;
 }
+*/
 
 div {
   box-sizing: border-box;
@@ -133,51 +135,73 @@ header h1 {
   line-height: 1.55em;
 }
 
-.services__item:nth-last-child(2){
-  margin-left:65px;
+.services__item:nth-last-child(2) {
+  margin-left: 65px;
 }
 
-.services__item:last-child{
+.services__item:last-child {
   float: right;
 }
 
-#services{
+#services {
   padding-bottom: 120px;
 }
 
-#portfolio{
+#portfolio {
   background: #f7f7f7;
   padding-bottom: 120px;
 }
 
-.portfolio__item{
+.portfolio__item {
   float: left;
 }
 
-.portfolio__item:nth-last-child(2){
+.portfolio__item:nth-last-child(2) {
   margin-left: 22px;
 }
 
-.portfolio__item:last-child{
+.portfolio__item:last-child {
   float: right;
 }
 
-#about{
+#about {}
 
-}
-
-.about__item{
+.about__item {
   margin-top: 80px;
 }
 
-.item__description{
+.item__description {
   float: left;
-  width: 350px;
-  line-height:20px;
-
+  width: 373px;
+  line-height: 20px;
+  margin-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.item__description h4,p{
+
+.item__description h4,
+p {
   text-align: right;
   margin: 0;
+}
+
+.about__item:nth-child(even) div {
+  float: right;
+}
+
+.about__item:nth-child(even) 
+p {
+  text-align: left;
+}
+
+.about__item:nth-child(even) h4 {
+  text-align: left;
+}
+
+footer{
+  background:#353537;
+  color: #f7f7f7;
+  text-align: center;
+  padding: 15px;
 }
