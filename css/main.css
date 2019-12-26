@@ -1,8 +1,12 @@
+html{
+  scroll-behavior: smooth;  
+}
 body {
   padding: 0;
   margin: 0;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #222;
+
 }
 
 /*
@@ -61,8 +65,11 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
-
 }
+.menu a:hover {
+  text-decoration: underline;
+}
+
 
 .titles__first {
   font-size: 40px;
@@ -80,7 +87,7 @@ header h1 {
 }
 
 .button {
-  background: chocolate;
+  background: #fed233;
   padding: 20px 0;
   border-radius: 4px;
   text-decoration: none;
@@ -97,8 +104,8 @@ header h1 {
 
 .button:hover {
   text-decoration: none;
-  color: #484543;
-  background: #7e4824;
+  color: #fed233;
+  background:#f7f7f7;
   transition: .3s;
 }
 
@@ -129,6 +136,16 @@ header h1 {
   width: 270px;
   float: left;
   text-align: center;
+  border: 5px solid white;
+  border-radius: 10px;
+  transition: .4s;
+  padding: 10px;
+}
+
+.services__item:hover{
+  border: 5px solid #fed233;
+  border-radius: 10px;
+
 }
 
 .services__item h3 {
@@ -141,6 +158,8 @@ header h1 {
   font-size: 14px;
   line-height: 1.55em;
   text-align: center;
+  margin: -5px;
+
 }
 
 .services__item:nth-last-child(2) {
@@ -161,12 +180,24 @@ header h1 {
   padding-bottom: 120px;
 }
 
-.portfolio__item {
-  float: left;
+#portfolio .title{
+margin-bottom: 50px;
 }
 
+.portfolio__item {
+  float: left;
+  width: 300px;
+  height:300px;
+}
+
+.portfolio__item:hover {
+  box-shadow: 0 0 2px 3px black;
+  transition: .4s;
+}
+
+
 .portfolio__item:nth-last-child(2) {
-  margin-left: 22px;
+  margin-left: 14px;
 }
 
 .portfolio__item:last-child {
@@ -177,20 +208,42 @@ header h1 {
 
 .about__item {
   margin-top: 80px;
+  margin-bottom: 80px;
+  border-radius: 40px;
+
 }
+
+.about__item:hover {
+  background: #f8f8f8;
+  transition: .4s;
+}
+
+.about__item:hover h4 {
+  text-decoration: underline;
+ }
+ .about__item:hover img{
+  border: 5px solid #575050;
+  transition: .3s;
+ }
+
 
 .item__description {
   float: left;
-  width: 373px;
+  width: 368px;
   line-height: 20px;
   margin-top: 15px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
+.description__image img{
+  border-radius: 100px;
+  box-sizing: border-box;
+  border: 5px solid silver;
 
-.item__description h4,
-p {
+}
+
+.item__description h4, p {
   text-align: right;
   margin: 0;
 }
@@ -205,6 +258,35 @@ p {
 
 .about__item:nth-child(even) h4 {
   text-align: left;
+}
+
+#contact{
+  margin-top: 80px;
+  padding-bottom: 80px;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+#contact a{
+  background: #fed233;
+  padding: 20px 0;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #777;
+  width: 240px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 25px;
+  
+}
+
+#contact a:hover {
+  color: #fed233;
+  background:#777;
+  transition: .3s;
 }
 
 footer {
